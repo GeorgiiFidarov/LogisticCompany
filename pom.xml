@@ -17,6 +17,7 @@
 		<module>PriceManagmentService</module>
 		<module>eureka-server</module>
 		<module>api-gateway</module>
+		<module>InfoManagmentService</module>
 	</modules>
 
     <properties>
