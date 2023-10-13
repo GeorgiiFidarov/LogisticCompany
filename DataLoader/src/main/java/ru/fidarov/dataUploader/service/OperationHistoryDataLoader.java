@@ -169,7 +169,6 @@ public class OperationHistoryDataLoader {
     }
 
     private void calculateAndSavePromo(){
-        System.out.println("In promo methiod");
         List<Object[]> result = historyRepository.getPriceShipmentAmount();
 
         for (Object[] row : result) {
@@ -207,7 +206,6 @@ public class OperationHistoryDataLoader {
             promoRepository.save(promo);
 
         }
-        System.out.println("Done promo");
     }
 
     private void getAndSaveInfoTable(){
@@ -239,6 +237,5 @@ public class OperationHistoryDataLoader {
             infoList.add(info);
         }
         infoRepository.saveAllAndFlush(infoList);
-        System.out.println("Done Info");
     }
 }

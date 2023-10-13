@@ -13,6 +13,11 @@ spring:
           uri: lb://PRICE
           predicates:
             - Path=/api/v1/price/**
+        - id: info
+          uri: lb://INFO
+          predicates:
+            - Path=/api/v1/info/**
+
 
 eureka:
   client:
